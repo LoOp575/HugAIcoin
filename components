@@ -1,0 +1,34 @@
+import Link from 'next/link';
+
+function Header() {
+  return (
+    <header className="bg-gray-100 py-4">
+      <nav className="container mx-auto flex justify-between">
+        <Link href="/">
+          <a>
+            <img src="/logo.png" alt="Hugai" className="h-8 w-8" />
+          </a>
+        </Link>
+        <ul className="flex items-center">
+          <li className="mr-4">
+            <Link href="/about">
+              <a>Tentang</a>
+            </Link>
+          </li>
+          <li className="mr-4">
+            <Link href="/faq">
+              <a>FAQ</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/community">
+              <a>Komunitas</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
