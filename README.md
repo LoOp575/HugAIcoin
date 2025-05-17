@@ -1,0 +1,2 @@
+# HugAIcoin
+HUG
